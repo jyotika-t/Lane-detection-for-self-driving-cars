@@ -1,4 +1,5 @@
 #Lane detection for self drivingcars#
+
 Developed a lane detection prediction system for autonomous driving applications using computer vision techniques. The system begins with preprocessing road images and video frames through grayscale conversion, Gaussian smoothing, and Canny edge detection to highlight lane boundaries. A region of interest (ROI) mask is applied to filter out irrelevant parts of the image, ensuring the focus remains on the roadway. Using the Hough Line Transform, the algorithm detects and distinguishes lane markings, including solid, dashed, straight, and curved lines.
 
 NumPy is employed for matrix operations and coordinate transformations, while OpenCV powers real-time image processing and line detection. The system overlays detected lane boundaries back onto the original frame, producing clear visualizations of the driving path. For analysis and debugging, Matplotlib is used to plot intermediate steps (edges, masked regions, detected lines). This end-to-end pipeline provides a foundation for more advanced self-driving car vision modules, demonstrating real-world applicability in road safety and driver assistance systems.
